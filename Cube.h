@@ -1,3 +1,4 @@
+#pragma once
 class Cube{
 	public:
 		Cube(double length);
