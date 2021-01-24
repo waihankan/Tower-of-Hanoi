@@ -3,8 +3,8 @@ class Cube{
 	public:
 		Cube(double length);
 		void setLength(double length);
-		double getLength();
-		double getVolume();
+		double getLength() const;
+		double getVolume() const;
 
 	private:
 		double length_;

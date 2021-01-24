@@ -4,9 +4,11 @@ using namespace std;
 
 int main(){
 	Game g;
-	cout << "Initial Game State: " << g << endl;
+	cout << "Initial Game State: " << endl;
+	cout << g << endl;
 	g.solve();
-	cout << "Final Solved Game State: " << g << endl;
+	cout << "Final Solved Game State: " << endl;
+	cout << g << endl;
 	
 	return 0;
 }

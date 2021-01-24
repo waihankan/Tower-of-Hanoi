@@ -8,6 +8,7 @@ class Stack{
 		Cube &peekTop();
 		Cube removeTop();
 		unsigned stackSize() const;
+		friend std::ostream& operator<<(std::ostream & os, const Stack & stack);
 	private:
 		std::vector <Cube> cubes_;
 };

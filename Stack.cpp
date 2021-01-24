@@ -22,4 +22,11 @@ unsigned Stack::stackSize() const{
 	return cubes_.size();
 }
 
+std::ostream& operator<<(std::ostream & os, const Stack & stack) {
+	  for (unsigned i = 0; i < stack.stackSize(); i++) {
+		      os << stack.cubes_[i].getLength() << " ";
+		        }
+	    os << endl;
+	      return os;
+}
 
