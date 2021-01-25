@@ -17,4 +17,4 @@ clean:
 	rm *.o main *.exe
 
 window: main.cpp Cube.cpp Stack.cpp Game.cpp
-	x86_64-w64-mingw32-g++ -o main64.exe main.cpp Cube.cpp Game.cpp HSLAPixel.cpp Stack.cpp
+	x86_64-w64-mingw32-g++ -o main64.exe main.cpp Cube.cpp Game.cpp Stack.cpp

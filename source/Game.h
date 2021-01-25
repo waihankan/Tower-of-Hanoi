@@ -11,6 +11,6 @@ class Game{
 		friend std::ostream& operator<<(std::ostream & os, const Game & game);
 	private:
 		vector <Stack> stacks_;
-		void _move(unsigned start, unsigned end, Stack &source, Stack &target, Stack &auxiliary);
+		void _move(unsigned n, Stack &source, Stack &target, Stack &auxiliary);
 		void _moveCube(Stack &s1, Stack &s2);
 };

@@ -26,24 +26,28 @@ Game::Game(){
 }
 
 void Game::solve(){
-	_move(0, stacks_[0].stackSize()-1, stacks_[0], stacks_[2], stacks_[1]);
+	_move(4, stacks_[0], stacks_[2], stacks_[1]);
 
 }
 
 void Game::_moveCube(Stack &s1, Stack &s2){
 	Cube cube = s1.removeTop();
 	s2.addCube(cube);
+	cout << *this << endl;
 }
 
-void Game::_move(unsigned start, unsigned end, Stack &source, Stack &target, Stack &auxiliary){
-	if (start == end){
+void Game::_move(unsigned n, Stack &source, Stack &target, Stack &auxiliary){
+
+	if (n == 1){
 		_moveCube(source, target);
-		cout << *this << endl;
-	}else{
-		_move(start+1, end, source, auxiliary, target);
-		_move(start, start, source, target, auxiliary);
-		_move(start+1, end, auxiliary, target, source);
 	}
+	else{
+		cout << n << endl;
+		_move(n-1, source, auxiliary, target);
+		_moveCube(source, target);
+		_move(n-1, auxiliary, target, source);
+	}
+
 }
 
 std::ostream& operator<<(std::ostream & os, const Game & game) {
@@ -52,4 +56,3 @@ std::ostream& operator<<(std::ostream & os, const Game & game) {
 		        }
 	    return os;
 }
-
