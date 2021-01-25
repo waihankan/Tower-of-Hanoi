@@ -1,6 +1,9 @@
 # Tower-of-Hanoi
 [The Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi) (also called the *Tower of Brahma* or *Lucas' Tower* and sometimes pluralized as Towers) is a mathematical game or puzzle. It consists of three rods and a number of disks of different sizes, which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top, thus making a conical shape.
 
+## Animation
+<img src="https://www.codespeedy.com/wp-content/uploads/2019/04/tower-of-hanoi-python.gif" width="450" height="400" />
+
 ## Algorithm (RECURSION METHOD)
     A = [3, 2, 1]
     B = []
@@ -22,9 +25,6 @@
 
     # Initiate call from source A to target C with auxiliary B
     move(3, A, C, B)
-
-## Animation
-<img src="https://www.codespeedy.com/wp-content/uploads/2019/04/tower-of-hanoi-python.gif" width="450" height="400" />
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
