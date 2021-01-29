@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 import numpy as np
+import sys
 
 def main():
+    
     # the array integers refer to the length of cubes in initial state
-    stack1 = [4, 3, 2, 1]
+    
+    stack1 = range(1, int(sys.argv[1]) + 1)
     stack2 = []
     stack3 = []
     global Game
